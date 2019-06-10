@@ -147,93 +147,21 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">Lua 程式碼 << <a href='Lua 程式碼.html'>Previous</a> <a href='Html 原始碼.html'>Next</a> >> Html 原始碼<br /><h1>Javascript 程式碼</h1>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">STLViewer = function(stlpath, plotarea) {
-
-	var mycanvas = document.getElementById(plotarea);
-	var viewer = new JSC3D.Viewer(mycanvas)
-	var theScene = new JSC3D.Scene;
-	////Initialize with a default file:
-	//var stlpath = "../../../assets/2013-10-23/stl/box.STL"
-	//var stlpath = "../../../assets/2013-10-23/stl/taj.stl"
-	viewer.setParameter('SceneUrl', stlpath);
-    viewer.setParameter('InitRotationX', 20);
-	viewer.setParameter('InitRotationY', 20);
-	viewer.setParameter('InitRotationZ', 0);
-	viewer.setParameter('ModelColor', '#CAA618');
-	viewer.setParameter('BackgroundColor1', '#FFFFFF');
-	viewer.setParameter('BackgroundColor2', '#383840');
-	viewer.init();
-	viewer.update();
-	////init done
-	var canvas_drop = document.getElementById('canvas-drop')
-	/*var dropzone = document.getElementById('dropzone')
-	dropzone.addEventListener('dragover', handleDragOver, false);
-	dropzone.addEventListener('drop', handleFileSelect, false); */
-	canvas_drop.addEventListener('dragover', handleDragOver, false);
-	canvas_drop.addEventListener('drop', handleFileSelect, false);
-
-////Drag and drop logic:
-	function handleFileSelect(evt) {
-	    evt.stopPropagation();
-	    evt.preventDefault();
-	    var files = evt.dataTransfer.files;
-	    console.log(evt)
-	    console.log(files)
-	    preview_stl(files[0])
-	  }
-
-	  function handleDragOver(evt) {
-	    evt.stopPropagation();
-	    evt.preventDefault();
-	    evt.dataTransfer.dropEffect = 'copy';
-	  }
-
-////jsc3d logic
-	var handle_file_select = function(e) {
-		e.stopPropagation()
-		e.preventDefault()
-		var f = e.target.files[0]
-		preview_stl(f)
-	}
-
-	function preview_stl(f) {
-		var reader = new FileReader()
-		var ext = f.name.split(".")[1]
-
-		function setup_viewer() {
-			viewer.setParameter('InitRotationX', 20);
-			viewer.setParameter('InitRotationY', 20);
-			viewer.setParameter('InitRotationZ', 0);
-			viewer.setParameter('ModelColor', '#CAA618');
-			viewer.setParameter('BackgroundColor1', '#FFFFFF');
-			viewer.setParameter('BackgroundColor2', '#383840');
-			viewer.setParameter('RenderMode', "flat");
-		}
-		setup_viewer()
-
-		reader.onload = (function(file) {
-			return function(e) {
-				theScene = new JSC3D.Scene
-		    	stl_loader = new JSC3D.StlLoader()
-		    	stl_loader.parseStl(theScene, e.target.result)
-		      	//viewer.init()
-		      	viewer.replaceScene(theScene)
-		      	viewer.update()
-		      	console.log("file reader onload")
-			}
-		})(f)
-
-		if (ext.toLowerCase() != "stl") {
-			alert("That doesn't appear to be an STL file.");
-		} else {
-			reader.readAsBinaryString(f)
-		}
-	}
-}
-</pre>
-<p></p>
-<br />Lua 程式碼 << <a href='Lua 程式碼.html'>Previous</a> <a href='Html 原始碼.html'>Next</a> >> Html 原始碼</div>
+    <div id="tipue_search_content">VPN << <a href='VPN.html'>Previous</a> <a href='game.html'>Next</a> >> game<br /><h1>下載教學</h1>
+<p><span color="#1212FF ">1.前往學校電算中心網站-下載專區</span></p>
+<p><span color="#1212FF ">網址:</span><a href="https://nfucc.nfu.edu.tw/zh/download"><span> </span>https://nfucc.nfu.edu.tw/zh/download</a></p>
+<p><span color="#1212FF ">點選校園授權軟體下載專區</span></p>
+<p><img alt="" height="222" src="https://50733119.github.io/2019wcmj/images/1.png" width="480"/></p>
+<p><span><span color="#1212FF ">2.登入校務eCare帳號</span></span></p>
+<p><span><img alt="" height="222" src="https://50733119.github.io/2019wcmj/images/2.png" width="480"/></span></p>
+<p><span><span color="#1212FF ">3.點選想要下載的軟體(範例:Microsoft)</span></span></p>
+<p><span><img alt="" height="222" src="https://50733119.github.io/2019wcmj/images/3.png" width="480"/></span></p>
+<p><span><span color="#1212FF ">4.選取軟體</span></span></p>
+<p><span><img alt="" height="222" src="https://50733119.github.io/2019wcmj/images/4.png" width="480"/></span></p>
+<p><span><span color="#1212FF ">5.選取下載版本即可完成</span></span></p>
+<p><span><img alt="" height="222" src="https://50733119.github.io/2019wcmj/images/5.png" width="480"/></span></p>
+<p><br/><span>校園軟體下載 &lt;&lt;<span> </span></span><a href="https://50733119.github.io/2019wcmj/content/%E6%A0%A1%E5%9C%92%E8%BB%9F%E9%AB%94%E4%B8%8B%E8%BC%89.html">Previous</a><span><span> </span></span><a href="https://50733119.github.io/2019wcmj/content/SSL-VPN.html">Next</a><span><span> </span>&gt;&gt; SSL-VPN</span></p>
+<br />VPN << <a href='VPN.html'>Previous</a> <a href='game.html'>Next</a> >> game</div>
         
     <!-- footer -->
       <div class="container">
